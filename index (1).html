@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexPlay — Tu tienda gamer definitiva</title>
+  <meta name="description" content="NexPlay: consolas, PCs gaming, videojuegos y accesorios al mejor precio. Envíos a toda Colombia." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span>NEX<span class="logo-accent">PLAY</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#consolas">Consolas</a></li>
+        <li><a href="#pc">PC Gaming</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-cart" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+        <a href="#planes" class="btn-primary">Comprar ahora</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🎮 LANZAMIENTO COLOMBIA — EDICIÓN 2026</div>
+      <h1 class="hero-title">
+        El gaming<br />
+        <span class="gradient-text">sin límites</span><br />
+        llega a tu puerta.
+      </h1>
+      <p class="hero-desc">
+        Consolas, PCs de alto rendimiento, videojuegos y accesorios premium.<br />
+        Envíos a toda Colombia. Garantía real. Precios honestos.
+      </p>
+      <div class="hero-cta">
+        <a href="#catalogo" class="btn-primary btn-lg">Ver catálogo</a>
+        <a href="#pc" class="btn-ghost btn-lg">Armar mi PC →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">+500</span><span class="stat-label">Productos</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">32</span><span class="stat-label">Ciudades</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Calificación</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="console-card floating">
+        <div class="console-img">🎮</div>
+        <div class="console-info">
+          <span class="badge-new">NUEVO</span>
+          <p>PlayStation 5 Pro</p>
+          <strong>$4.299.000</strong>
+        </div>
+      </div>
+      <div class="console-card floating delay-1">
+        <div class="console-img">🖥️</div>
+        <div class="console-info">
+          <span class="badge-hot">HOT</span>
+          <p>PC RTX 4070 Ti</p>
+          <strong>$6.850.000</strong>
+        </div>
+      </div>
+      <div class="console-card floating delay-2">
+        <div class="console-img">🕹️</div>
+        <div class="console-info">
+          <span class="badge-offer">-20%</span>
+          <p>Xbox Series X</p>
+          <strong>$3.199.000</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARCAS ===== -->
+  <section class="brands">
+    <div class="container">
+      <p class="brands-label">MARCAS OFICIALES</p>
+      <div class="brands-row">
+        <span>PlayStation</span>
+        <span>Xbox</span>
+        <span>Nintendo</span>
+        <span>NVIDIA</span>
+        <span>AMD</span>
+        <span>Logitech</span>
+        <span>Razer</span>
+        <span>Corsair</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <h2>Catálogo <span class="gradient-text">Destacado</span></h2>
+        <p>Los productos más buscados del momento</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="tab active" data-filter="all">Todo</button>
+        <button class="tab" data-filter="consola">Consolas</button>
+        <button class="tab" data-filter="pc">PC Gaming</button>
+        <button class="tab" data-filter="juego">Juegos</button>
+        <button class="tab" data-filter="accesorio">Accesorios</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONSOLAS ===== -->
+  <section class="section dark-section" id="consolas">
+    <div class="container">
+      <div class="section-header">
+        <h2>Consolas <span class="gradient-text">2026</span></h2>
+        <p>Las últimas generaciones disponibles</p>
+      </div>
+      <div class="consoles-showcase">
+        <div class="console-feature">
+          <div class="console-emoji">🎮</div>
+          <h3>PlayStation 5 Pro</h3>
+          <p>8K gaming, SSD ultrarrápido, DualSense Edge. La experiencia definitiva.</p>
+          <ul class="spec-list">
+            <li>✓ CPU AMD Zen 2 (8 núcleos)</li>
+            <li>✓ GPU AMD RDNA 3 — 16.7 TFLOPs</li>
+            <li>✓ 16 GB RAM GDDR6</li>
+            <li>✓ SSD 1TB NVMe</li>
+          </ul>
+          <div class="price-tag">$4.299.000 <span>COP</span></div>
+          <button class="btn-primary" onclick="addToCart('PS5 Pro', 4299000)">Agregar al carrito</button>
+        </div>
+        <div class="console-feature featured">
+          <div class="badge-featured">⭐ MÁS VENDIDO</div>
+          <div class="console-emoji">🕹️</div>
+          <h3>Xbox Series X</h3>
+          <p>Game Pass, 4K/120fps, retrocompatibilidad total. El ecosistema más grande.</p>
+          <ul class="spec-list">
+            <li>✓ CPU AMD Zen 2 (8 núcleos)</li>
+            <li>✓ GPU 12 TFLOPs RDNA 2</li>
+            <li>✓ 16 GB RAM GDDR6</li>
+            <li>✓ SSD 1TB NVMe velocidad</li>
+          </ul>
+          <div class="price-tag">$3.199.000 <span>COP</span></div>
+          <button class="btn-primary" onclick="addToCart('Xbox Series X', 3199000)">Agregar al carrito</button>
+        </div>
+        <div class="console-feature">
+          <div class="console-emoji">🟡</div>
+          <h3>Nintendo Switch 2</h3>
+          <p>Gaming portátil y de sala. La nueva generación del Switch es una bestia.</p>
+          <ul class="spec-list">
+            <li>✓ NVIDIA T239 customizado</li>
+            <li>✓ Pantalla 7" OLED 120fps</li>
+            <li>✓ 12 GB RAM</li>
+            <li>✓ Modo dock 4K</li>
+          </ul>
+          <div class="price-tag">$2.499.000 <span>COP</span></div>
+          <button class="btn-primary" onclick="addToCart('Nintendo Switch 2', 2499000)">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PC GAMING ===== -->
+  <section class="section" id="pc">
+    <div class="container">
+      <div class="section-header">
+        <h2>PC <span class="gradient-text">Gaming</span></h2>
+        <p>Configuraciones listas y armadas para cada presupuesto</p>
+      </div>
+      <div class="pc-tiers">
+        <div class="pc-tier">
+          <div class="tier-icon">⚡</div>
+          <h3>Starter</h3>
+          <p class="tier-sub">Para empezar fuerte</p>
+          <div class="tier-specs">
+            <span>Ryzen 5 5600X</span>
+            <span>RTX 3060</span>
+            <span>16GB RAM</span>
+            <span>512GB SSD</span>
+            <span>1080p / 144fps</span>
+          </div>
+          <div class="tier-price">$3.200.000</div>
+          <button class="btn-outline" onclick="addToCart('PC Starter', 3200000)">Cotizar</button>
+        </div>
+        <div class="pc-tier tier-pro">
+          <div class="tier-badge">RECOMENDADO</div>
+          <div class="tier-icon">🔥</div>
+          <h3>Pro Gamer</h3>
+          <p class="tier-sub">El equilibrio perfecto</p>
+          <div class="tier-specs">
+            <span>Ryzen 7 7800X3D</span>
+            <span>RTX 4070 Ti</span>
+            <span>32GB DDR5</span>
+            <span>1TB NVMe</span>
+            <span>1440p / 165fps</span>
+          </div>
+          <div class="tier-price">$6.850.000</div>
+          <button class="btn-primary" onclick="addToCart('PC Pro Gamer', 6850000)">Cotizar</button>
+        </div>
+        <div class="pc-tier">
+          <div class="tier-icon">👑</div>
+          <h3>Beast Mode</h3>
+          <p class="tier-sub">Sin límites, sin excusas</p>
+          <div class="tier-specs">
+            <span>Core i9-14900KS</span>
+            <span>RTX 4090</span>
+            <span>64GB DDR5</span>
+            <span>2TB NVMe</span>
+            <span>4K / 240fps</span>
+          </div>
+          <div class="tier-price">$14.500.000</div>
+          <button class="btn-outline" onclick="addToCart('PC Beast Mode', 14500000)">Cotizar</button>
+        </div>
+      </div>
+      <div class="pc-custom">
+        <h3>¿Quieres armar tu PC a la medida?</h3>
+        <p>Cuéntanos tu presupuesto y uso. Nuestros expertos te arman la mejor configuración.</p>
+        <a href="#contacto" class="btn-primary">Asesoría gratuita →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JUEGOS TOP ===== -->
+  <section class="section dark-section" id="juegos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Juegos <span class="gradient-text">Top</span> 2026</h2>
+        <p>Los títulos más populares con entrega inmediata</p>
+      </div>
+      <div class="games-grid">
+        <div class="game-card" onclick="addToCart('GTA VI', 299000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#ff6b35,#f7c59f)">🌴</div>
+          <div class="game-info"><h4>GTA VI</h4><p>Acción / Mundo abierto</p><strong>$299.000</strong></div>
+        </div>
+        <div class="game-card" onclick="addToCart('Spider-Man 3', 249000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#e63946,#457b9d)">🕷️</div>
+          <div class="game-info"><h4>Spider-Man 3</h4><p>Acción / Aventura</p><strong>$249.000</strong></div>
+        </div>
+        <div class="game-card" onclick="addToCart('Hollow Knight 2', 89000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#2d3a4a,#5a8dee)">🗡️</div>
+          <div class="game-info"><h4>Silksong</h4><p>Indie / Metroidvania</p><strong>$89.000</strong></div>
+        </div>
+        <div class="game-card" onclick="addToCart('Elden Ring DLC', 189000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#b5a642,#3d2b1f)">⚔️</div>
+          <div class="game-info"><h4>Elden Ring DLC</h4><p>RPG / Soulslike</p><strong>$189.000</strong></div>
+        </div>
+        <div class="game-card" onclick="addToCart('Call of Duty 2026', 279000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#222,#4a4a4a)">🔫</div>
+          <div class="game-info"><h4>Call of Duty 2026</h4><p>FPS / Multijugador</p><strong>$279.000</strong></div>
+        </div>
+        <div class="game-card" onclick="addToCart('Zelda: Echoes', 229000)">
+          <div class="game-cover" style="background: linear-gradient(135deg,#2d6a4f,#95d5b2)">🌿</div>
+          <div class="game-info"><h4>Zelda: Echoes</h4><p>Aventura / Switch 2</p><strong>$229.000</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLANES ===== -->
+  <section class="section" id="planes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Planes de <span class="gradient-text">Suscripción</span></h2>
+        <p>Accede a descuentos exclusivos, lanzamientos anticipados y soporte VIP</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <h3>Free</h3>
+          <div class="plan-price">$0<span>/mes</span></div>
+          <ul class="plan-features">
+            <li>✓ Catálogo completo</li>
+            <li>✓ Envío estándar</li>
+            <li>✓ Soporte por email</li>
+            <li class="off">✗ Descuentos exclusivos</li>
+            <li class="off">✗ Pre-órdenes</li>
+            <li class="off">✗ Soporte 24/7</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('Free')">Empezar gratis</button>
+        </div>
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">⭐ POPULAR</div>
+          <h3>Gamer</h3>
+          <div class="plan-price">$29.900<span>/mes</span></div>
+          <ul class="plan-features">
+            <li>✓ Todo Free</li>
+            <li>✓ 10% descuento en todo</li>
+            <li>✓ Envío express gratis</li>
+            <li>✓ Acceso a pre-órdenes</li>
+            <li>✓ Newsletter exclusiva</li>
+            <li class="off">✗ Soporte 24/7</li>
+          </ul>
+          <button class="btn-primary" onclick="openModal('Gamer')">Suscribirme</button>
+        </div>
+        <div class="plan-card">
+          <h3>Pro Elite</h3>
+          <div class="plan-price">$59.900<span>/mes</span></div>
+          <ul class="plan-features">
+            <li>✓ Todo Gamer</li>
+            <li>✓ 18% descuento en todo</li>
+            <li>✓ Soporte 24/7 WhatsApp</li>
+            <li>✓ Asesoría personalizada</li>
+            <li>✓ Garantía extendida</li>
+            <li>✓ Acceso early adopter</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('Pro Elite')">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ NEXPLAY ===== -->
+  <section class="section dark-section why-us">
+    <div class="container">
+      <div class="section-header">
+        <h2>¿Por qué <span class="gradient-text">NexPlay</span>?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-icon">🚚</div><h4>Envío rápido</h4><p>Entrega en 24-48 horas a las principales ciudades de Colombia.</p></div>
+        <div class="why-card"><div class="why-icon">🛡️</div><h4>Garantía real</h4><p>Todos los productos con garantía de 1 año y soporte posventa.</p></div>
+        <div class="why-card"><div class="why-icon">💳</div><h4>Paga fácil</h4><p>PSE, tarjeta, Nequi, Daviplata o efectivo en puntos aliados.</p></div>
+        <div class="why-card"><div class="why-icon">🎮</div><h4>100% originales</h4><p>Solo productos originales, sin copias ni refurbished sin avisar.</p></div>
+        <div class="why-card"><div class="why-icon">🤝</div><h4>Soporte gamer</h4><p>Equipo que juega y entiende lo que necesitas. Sin robótica.</p></div>
+        <div class="why-card"><div class="why-icon">📦</div><h4>+500 productos</h4><p>El catálogo más completo de gaming en Colombia.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes dudas o quieres asesoría? Escríbenos.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>¿Qué necesitas?</label>
+            <select>
+              <option>Quiero comprar una consola</option>
+              <option>Quiero armar un PC</option>
+              <option>Consulta sobre juegos</option>
+              <option>Soporte técnico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea placeholder="Cuéntanos en qué te podemos ayudar..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Enviar mensaje →</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item"><span>📍</span><div><strong>Colombia</strong><p>Envíos a todo el país</p></div></div>
+          <div class="contact-item"><span>📱</span><div><strong>WhatsApp</strong><p>+57 300 000 0000</p></div></div>
+          <div class="contact-item"><span>📧</span><div><strong>Email</strong><p>hola@nexplay.co</p></div></div>
+          <div class="contact-item"><span>⏰</span><div><strong>Horario</strong><p>Lun–Sáb 8am–8pm</p></div></div>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">TikTok</a>
+            <a href="#" class="social-btn">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="logo-icon">⬡</span> NEX<span class="logo-accent">PLAY</span></div>
+          <p>La tienda gamer definitiva de Colombia. Desarrollado por <strong>Fabio Andrey Ramírez Luna</strong>.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Productos</h4>
+          <a href="#consolas">Consolas</a>
+          <a href="#pc">PC Gaming</a>
+          <a href="#juegos">Videojuegos</a>
+          <a href="#catalogo">Accesorios</a>
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <a href="#">Sobre nosotros</a>
+          <a href="#">Blog</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#">Trabaja con nosotros</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Términos de uso</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Devoluciones</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NexPlay — Fabio Andrey Ramírez Luna. Todos los derechos reservados.</p>
+        <p>Diseñado con IA: Claude Sonnet 4.6 · Gemini 3.1 · GPT-5</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL SUSCRIPCIÓN ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3>¡Casi listo, gamer! 🎮</h3>
+      <p>Completa tu registro para el plan <strong id="modalPlan"></strong></p>
+      <form id="modalForm">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="tu@email.com" required />
+        <input type="text" placeholder="Ciudad" />
+        <button type="submit" class="btn-primary btn-full">Registrarme ahora →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== CART TOAST ===== -->
+  <div class="cart-toast" id="cartToast">✓ Producto agregado al carrito</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
